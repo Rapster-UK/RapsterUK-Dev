@@ -1,4 +1,9 @@
 @echo off
+
+rem Text color code for Light Green is A
+set "colorCode=A"
+color %colorCode%
+
 rem Read from ASCII.txt and visualize ASCII art
 type ASCII.txt
 
