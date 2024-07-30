@@ -33,4 +33,5 @@ cd ..\ckau-book-PixN
 ..\..\..\..\emulators\pixn\PortableGit\cmd\git pull
 
 echo .
+ping -n 2 127.0.0.1 > nul
 exit
