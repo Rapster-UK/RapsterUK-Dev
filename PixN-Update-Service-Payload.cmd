@@ -4,6 +4,16 @@ rem Text color code for Light Green is A
 set "colorCode=A"
 color %colorCode%
 
+:VBSDynamicBuild
+SET TempVBSFile=%temp%\~tmpSendKeysTemp.vbs
+IF EXIST "%TempVBSFile%" DEL /F /Q "%TempVBSFile%"
+ECHO Set WshShell = WScript.CreateObject("WScript.Shell") >>"%TempVBSFile%"
+ECHO Wscript.Sleep 900                                    >>"%TempVBSFile%"
+ECHO WshShell.SendKeys "{F11}"                            >>"%TempVBSFile%
+ECHO Wscript.Sleep 900                                    >>"%TempVBSFile%"
+
+CSCRIPT //nologo "%TempVBSFile%"
+
 rem Read from ASCII.txt and visualize ASCII art
 type ASCII.txt
 
