@@ -32,3 +32,4 @@ cd ..\ckau-book-PixN
 ..\..\..\..\emulators\pixn\PortableGit\cmd\git pull
 
 echo .
+exit
