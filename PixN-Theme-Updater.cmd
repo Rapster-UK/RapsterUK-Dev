@@ -24,7 +24,9 @@ echo Updating the script...
 cd /d "%~dp0"
 
 rem Updated code from here onwards.....
+echo NEW 10:22
 pause
+
 rem Read from ASCII.txt and visualize ASCII art
 type ASCII.txt
 
